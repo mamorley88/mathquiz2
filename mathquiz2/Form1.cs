@@ -47,19 +47,20 @@ namespace mathquiz2
         }
 
         private void Form1_Load(object sender, EventArgs e)
-
         {
+            label7.Text = DateTime.Now.ToString("dd  MMMM  yyyy");  
         }
 
         /// <summary> 
         /// Call the StartTheQuiz() method and enable
         /// the Start button. 
         /// </summary> 
-
+        
         private void startButton_Click_1(object sender, EventArgs e)
         {
             StartTheQuiz();
             startButton.Enabled = false;
+         
         }
 
         /// <summary>
@@ -69,8 +70,8 @@ namespace mathquiz2
 
         public void StartTheQuiz()
         {
+                       
 
-           
             // Fill in the addition problem.
             // Generate two random numbers to add.
             // Store the values in the variables 'addend1' and 'addend2'.
@@ -190,7 +191,8 @@ namespace mathquiz2
             }
         }
 
-      
+        
+       
     }
 }
 
